@@ -6,5 +6,11 @@ pipeline {
         sh 'uptime'
       }
     }
+    stage('test stage') {
+      steps {
+        sh '''uptime
+date'''
+      }
+    }
   }
 }
