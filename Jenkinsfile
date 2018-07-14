@@ -12,5 +12,12 @@ pipeline {
 date'''
       }
     }
+    stage('Deploy stage') {
+      steps {
+        sh '''uptime
+date
+uname -a'''
+      }
+    }
   }
 }
